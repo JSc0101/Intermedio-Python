@@ -84,3 +84,22 @@ dia_semana = fecha.weekday()
 print(dia_semana)  # salida: 4 (corresponde al viernes)
 
 ````
+
+## list comprehesion
+
+* La comprensión de listas (list comprehension en inglés) es una sintaxis de Python que permite crear listas de una forma más concisa. La sintaxis de la comprensión de listas es la siguiente:
+
+````
+[expr for var in lista if cond]
+
+````
+
+* donde expr es una expresión que se evalúa para cada valor de var en lista que cumple la condición cond.
+
+Aquí hay un ejemplo de cómo utilizar la comprensión de listas para crear una lista de los cuadrados de los números del 1 al 5:
+
+`````
+cuadrados = [x**2 for x in range(1, 6)]
+print(cuadrados) # salida: [1, 4, 9, 16, 25]
+
+`````
