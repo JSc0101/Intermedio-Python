@@ -103,3 +103,24 @@ cuadrados = [x**2 for x in range(1, 6)]
 print(cuadrados) # salida: [1, 4, 9, 16, 25]
 
 `````
+
+
+## Lambdas
+
+* En Python, una lambda es una función anónima que se utiliza para crear funciones simples en una sola línea de código.
+
+La sintaxis básica de una lambda en Python es la siguiente:
+
+````
+lambda x: x**2
+````
+
+* Para ver los valores del objeto map que se crea al aplicar una lambda a una lista, puedes convertirlo a una lista o iterar sobre él.
+
+Por ejemplo, si tienes el siguiente código:
+
+````
+lista = [1, 2, 3, 4, 5]
+resultado = map(lambda x: x**2, lista)
+
+````
