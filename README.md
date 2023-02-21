@@ -141,3 +141,23 @@ squares = map(square, numbers)
 print(list(squares)) # Output: [1, 4, 9, 16, 25]
 
 ````
+
+## Tipos de errores
+
+* En Python, se pueden clasificar los errores en tres tipos: errores de sintaxis (SyntaxError), errores de tiempo de ejecución (RuntimeError) y errores de tiempo de ejecución de excepciones (Exception).
+
+````
+# Error de sintaxis: falta el paréntesis de cierre
+print("Hola, mundo!"
+
+# Error NameError: la variable 'x' no está definida
+print(x)
+
+# Error TypeError: no se puede concatenar un entero y una cadena
+x = 5
+y = "Hola"
+print(x + y)
+
+````
+
+* hay varios errores en python pero estos suelen ser los mas comunes
