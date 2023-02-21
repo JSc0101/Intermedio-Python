@@ -213,3 +213,38 @@ else:
     print("No se ha encontrado un número de teléfono en la cadena de texto")
 
 ```
+
+## PIP
+
+* PIP es el acrónimo de "Paquete de Instalación de Python" ("Python Package Installer" en inglés), y se refiere a un sistema de gestión de paquetes para Python. PIP permite a los desarrolladores de Python descargar, instalar, actualizar y administrar paquetes y dependencias de software adicionales en sus proyectos de Python de manera sencilla.
+
+* Con PIP, los desarrolladores pueden buscar y descargar fácilmente paquetes de Python de la biblioteca PyPI (Python Package Index), que es un repositorio centralizado de paquetes de software de Python de código abierto. PIP también se puede utilizar para instalar paquetes de Python desde otros repositorios, archivos de distribución o URL.
+
+## instalacion de pip
+
+* La mayoría de las distribuciones modernas de Python incluyen pip como parte de la instalación. Para verificar si pip ya está instalado en su sistema, puede abrir una terminal o línea de comandos y escribir el siguiente comando:
+
+````
+pip --version
+
+````
+
+# instalacion window
+
+1. Instalar pip manualmente
+Si su sistema operativo no tiene un paquete de gestión de paquetes para instalar pip, puede descargar e instalar pip manualmente. Para hacerlo, siga estos pasos:
+
+Descargue el script de instalación get-pip.py desde el sitio web oficial de pip ejecutando el siguiente comando en una terminal:
+
+````
+https://bootstrap.pypa.io/get-pip.py
+````
+
+````
+python get-pip.py
+````
+
+## ehrabuena
+
+* te felicito si has llegado hasta aqui conmigo , ha sido un camino interesante ahora que tienes las bases y conceptos de python necesarios es hora de ponerlos a pruebas en proyectoos y ejercicios , sigue asi tanto como tu y como muchos seguiremos aprendiendo este maravilloso lenguaje
+
