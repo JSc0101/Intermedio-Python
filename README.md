@@ -161,3 +161,20 @@ print(x + y)
 ````
 
 * hay varios errores en python pero estos suelen ser los mas comunes
+
+
+## ficheros
+
+* En Python, puedes manejar archivos utilizando las funciones y métodos proporcionados por el módulo integrado "os" y "io". Aquí hay un resumen de los pasos comunes para manejar archivos en Python:
+
+````
+file = open("archivo.txt", "r")
+
+contenido = file.read()
+print(contenido)
+
+file = open("archivo.txt", "w")
+file.write("Hola, Mundo!")
+file.close()
+
+````
