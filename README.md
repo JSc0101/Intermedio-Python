@@ -124,3 +124,20 @@ lista = [1, 2, 3, 4, 5]
 resultado = map(lambda x: x**2, lista)
 
 ````
+
+## funciones de order superior
+* Las funciones de orden superior (también conocidas como funciones de alto nivel o Higher-Order Functions en inglés) son funciones que pueden tomar una o más funciones como argumentos, y/o pueden devolver una función como resultado. En Python, las funciones son objetos de primera clase, lo que significa que se pueden tratar como cualquier otro objeto (por ejemplo, se pueden asignar a variables, se pueden pasar como argumentos a otras funciones, se pueden devolver como resultados de funciones, etc.).
+
+Aquí hay algunos ejemplos de funciones de orden superior en Python:
+
+La función map() toma una función y un iterable como argumentos y aplica la función a cada elemento del iterable, devolviendo un nuevo iterable con los resultados:
+
+````
+def square(x):
+    return x**2
+
+numbers = [1, 2, 3, 4, 5]
+squares = map(square, numbers)
+print(list(squares)) # Output: [1, 4, 9, 16, 25]
+
+````
