@@ -26,10 +26,11 @@
 
 ## Datetime
 
-* modulo de fechas
+- modulo de fechas
 
-* metodos
-````
+- metodos
+
+```
 * datetime.now() devuelve la fecha y hora actual.
 * datetime.date() devuelve la fecha actual.
 * datetime.time() devuelve la hora actual.
@@ -44,11 +45,11 @@
 * datetime.minute devuelve el minuto de un objeto datetime.
 * datetime.second devuelve el segundo de un objeto datetime.
 * datetime.weekday() devuelve el día de la semana como un número entero, donde el lunes es 0 y el domingo es 6.
-````
+```
 
 ## ejemplos
 
-````
+```
 import datetime
 
 # Obtener la fecha y hora actual
@@ -83,56 +84,56 @@ fecha = datetime.date(2023, 2, 19)
 dia_semana = fecha.weekday()
 print(dia_semana)  # salida: 4 (corresponde al viernes)
 
-````
+```
 
 ## list comprehesion
 
-* La comprensión de listas (list comprehension en inglés) es una sintaxis de Python que permite crear listas de una forma más concisa. La sintaxis de la comprensión de listas es la siguiente:
+- La comprensión de listas (list comprehension en inglés) es una sintaxis de Python que permite crear listas de una forma más concisa. La sintaxis de la comprensión de listas es la siguiente:
 
-````
+```
 [expr for var in lista if cond]
 
-````
+```
 
-* donde expr es una expresión que se evalúa para cada valor de var en lista que cumple la condición cond.
+- donde expr es una expresión que se evalúa para cada valor de var en lista que cumple la condición cond.
 
 Aquí hay un ejemplo de cómo utilizar la comprensión de listas para crear una lista de los cuadrados de los números del 1 al 5:
 
-`````
+```
 cuadrados = [x**2 for x in range(1, 6)]
 print(cuadrados) # salida: [1, 4, 9, 16, 25]
 
-`````
-
+```
 
 ## Lambdas
 
-* En Python, una lambda es una función anónima que se utiliza para crear funciones simples en una sola línea de código.
+- En Python, una lambda es una función anónima que se utiliza para crear funciones simples en una sola línea de código.
 
 La sintaxis básica de una lambda en Python es la siguiente:
 
-````
+```
 lambda x: x**2
-````
+```
 
-* Para ver los valores del objeto map que se crea al aplicar una lambda a una lista, puedes convertirlo a una lista o iterar sobre él.
+- Para ver los valores del objeto map que se crea al aplicar una lambda a una lista, puedes convertirlo a una lista o iterar sobre él.
 
 Por ejemplo, si tienes el siguiente código:
 
-````
+```
 lista = [1, 2, 3, 4, 5]
 resultado = map(lambda x: x**2, lista)
 
-````
+```
 
 ## funciones de order superior
-* Las funciones de orden superior (también conocidas como funciones de alto nivel o Higher-Order Functions en inglés) son funciones que pueden tomar una o más funciones como argumentos, y/o pueden devolver una función como resultado. En Python, las funciones son objetos de primera clase, lo que significa que se pueden tratar como cualquier otro objeto (por ejemplo, se pueden asignar a variables, se pueden pasar como argumentos a otras funciones, se pueden devolver como resultados de funciones, etc.).
+
+- Las funciones de orden superior (también conocidas como funciones de alto nivel o Higher-Order Functions en inglés) son funciones que pueden tomar una o más funciones como argumentos, y/o pueden devolver una función como resultado. En Python, las funciones son objetos de primera clase, lo que significa que se pueden tratar como cualquier otro objeto (por ejemplo, se pueden asignar a variables, se pueden pasar como argumentos a otras funciones, se pueden devolver como resultados de funciones, etc.).
 
 Aquí hay algunos ejemplos de funciones de orden superior en Python:
 
 La función map() toma una función y un iterable como argumentos y aplica la función a cada elemento del iterable, devolviendo un nuevo iterable con los resultados:
 
-````
+```
 def square(x):
     return x**2
 
@@ -140,13 +141,13 @@ numbers = [1, 2, 3, 4, 5]
 squares = map(square, numbers)
 print(list(squares)) # Output: [1, 4, 9, 16, 25]
 
-````
+```
 
 ## Tipos de errores
 
-* En Python, se pueden clasificar los errores en tres tipos: errores de sintaxis (SyntaxError), errores de tiempo de ejecución (RuntimeError) y errores de tiempo de ejecución de excepciones (Exception).
+- En Python, se pueden clasificar los errores en tres tipos: errores de sintaxis (SyntaxError), errores de tiempo de ejecución (RuntimeError) y errores de tiempo de ejecución de excepciones (Exception).
 
-````
+```
 # Error de sintaxis: falta el paréntesis de cierre
 print("Hola, mundo!"
 
@@ -158,16 +159,15 @@ x = 5
 y = "Hola"
 print(x + y)
 
-````
+```
 
-* hay varios errores en python pero estos suelen ser los mas comunes
-
+- hay varios errores en python pero estos suelen ser los mas comunes
 
 ## ficheros
 
-* En Python, puedes manejar archivos utilizando las funciones y métodos proporcionados por el módulo integrado "os" y "io". Aquí hay un resumen de los pasos comunes para manejar archivos en Python:
+- En Python, puedes manejar archivos utilizando las funciones y métodos proporcionados por el módulo integrado "os" y "io". Aquí hay un resumen de los pasos comunes para manejar archivos en Python:
 
-````
+```
 file = open("archivo.txt", "r")
 
 contenido = file.read()
@@ -177,4 +177,39 @@ file = open("archivo.txt", "w")
 file.write("Hola, Mundo!")
 file.close()
 
-````
+```
+
+## expresiones regulares
+
+- Las expresiones regulares en Python son una herramienta de procesamiento de cadenas de texto que se utilizan para buscar y manipular patrones de texto en una cadena. Una expresión regular es una secuencia de caracteres que define un patrón de búsqueda y que puede coincidir con una o varias partes de una cadena de texto.
+
+En Python, las expresiones regulares se implementan mediante el módulo "re". Este módulo proporciona funciones que permiten la creación de patrones de expresiones regulares y la realización de operaciones de búsqueda, extracción y reemplazo en cadenas de texto.
+
+Las expresiones regulares en Python se construyen utilizando una sintaxis especial que incluye caracteres especiales y metacaracteres para definir patrones específicos. Por ejemplo, el metacaractero "." se utiliza para representar cualquier carácter, mientras que el metacaractero "^" se utiliza para indicar el inicio de una cadena.
+
+En resumen, las expresiones regulares en Python son una herramienta poderosa para el procesamiento de cadenas de texto y permiten la búsqueda y manipulación de patrones de texto de manera eficiente y flexible.
+
+```
+import re
+
+texto = "Hola, ¿cómo estás?"
+patron = "estás"
+
+if re.search(patron, texto):
+    print("El patrón ha sido encontrado en la cadena de texto")
+else:
+    print("El patrón no ha sido encontrado en la cadena de texto")
+
+
+texto = "Mi número de teléfono es 123456789"
+patron = r"(\d{9})"
+
+resultado = re.search(patron, texto)
+
+if resultado:
+    numero_telefono = resultado.group(1)
+    print("El número de teléfono es:", numero_telefono)
+else:
+    print("No se ha encontrado un número de teléfono en la cadena de texto")
+
+```
